@@ -1,0 +1,204 @@
+#headerImg{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    img{
+        width: 100%;
+    } 
+}
+header{
+    padding: 2em 2em;
+    .Meta{
+        color: #434343;
+        font-weight: 400;
+        span{
+            color: #A02279 ;
+        }
+        p{
+            margin:2em 0;
+        }
+        h1{
+            width: 100%;
+            padding: 0;
+        }
+        input{
+            background: rgba(247, 247, 247, 0.1);
+            border: 1px solid #A3A3A3;
+            border-radius: 8px ;
+            color: #B8B8B8;
+            padding: 1em 0 1em 1em;
+            width: calc(100% - 1em);
+            margin-bottom: 1em;
+        }
+        
+    }
+    .headerInput{
+        display: grid;
+        width: 100%;
+        button{
+            background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+            border-radius:8px ;
+            padding: 1em;
+            color: white;
+        }
+    }
+}
+.headerIcons{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    margin-top: 1em;
+    padding: 1em;
+    width: calc(100% - 2em);
+    img{
+        width: 5em;
+    }
+}
+.adventures{
+    h2{
+        text-align: center;
+    }
+}
+.secondHeader{
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    
+    .Meta{
+        color: white;
+        .headerInput{
+
+            button{
+                background: white;
+                color:#A02279;
+            }
+        }
+    }
+
+}
+@media (min-width:700px) {
+    header{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-right: 2em;
+        
+        
+        
+        #headerImg{
+            width: 21em;
+            height: 21em;
+            display: grid;
+            align-items: flex-end;
+            padding-right: 1em;
+
+            img{
+                height: 20em;
+                width: calc( 100% - 2em);
+            }
+        }
+        
+        .headerInput{
+            display: flex;
+            width: 21em;
+
+            button{
+                border-radius: 0px 8px 8px 0px;
+                width: 30%;
+                padding: 1em;
+                border: #A02279;
+            }
+        }
+        .Meta{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding: 0 0 0 2em;
+            width: 24em;
+            margin: 0;
+
+            input{
+                border-radius: 8px 0px 0px 8px;
+                width: 70%;
+                margin: 0;
+            }
+            p{
+                width: 24em;
+            }
+            
+        }
+    }
+    .secondHeader{
+        .Meta{
+            button{
+                border-radius: 8px;
+            }
+        }
+    }
+    .headerIcons{
+        padding: 1em 4em;
+        width: calc(100% - 8em);
+        img{
+            width: 7em;
+        }
+    }
+    .mainCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (min-width:1000px) {
+    header{
+        
+        padding: 125px 6.25em 67px;
+        .Meta{
+            h1{
+                font-size: 3em;
+                font-weight: 400;
+                padding: 0;
+            }
+            p{
+                font-weight: 400px;
+                width: 100%;
+                font-size: 24px;
+            }
+            padding: 0;
+            width: 646px;
+            margin-bottom: 96px;
+        }
+        .headerInput{
+            width: 100%;
+            input{
+                width:390px;
+            }
+    
+            button{
+                width: 230px;
+            }
+        }
+        #headerImg{
+            width: 476px;
+            height: 457px;
+            padding: 0;
+            align-items: center;
+            img{
+                height: fit-content;
+                width: fit-content;
+            }
+        }
+    }
+    .headerIcons{
+        img{
+            width:220px;
+            height:50px;
+            padding:0 4em;
+        }
+    }
+    .adventures{
+        h2{
+            margin-top: 58px;
+            font-weight: 700;
+            font-size: 48px;
+        }
+    }
+    .mainCards{
+        padding: 0 50px;
+    }
+}

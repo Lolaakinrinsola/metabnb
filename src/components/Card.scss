@@ -1,0 +1,39 @@
+.card{
+    display: grid;
+    align-items: center;
+    width: 260px;
+    height: 372px;
+    padding: 16px;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    margin-bottom: 24px;
+.cardImg{
+    width: 260px;
+    height: 265px;
+    padding: 0;
+    margin: 0;
+}
+
+.cardDesc{
+    div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+    p{
+        color:#434343;
+        font-size: 12px;
+        margin: 0;
+    }
+}
+}
+.star{
+    margin-bottom: 2em;
+    margin-top: 9px;
+}
+

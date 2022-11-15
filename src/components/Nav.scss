@@ -1,0 +1,126 @@
+#nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2.6em 2em 0 2em;
+    #navImage{
+        width:7em;
+        
+    }
+    #connectButton{
+        padding:.5em .5em;
+        font-weight: 400;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        border-radius: 10px;
+        color:#ffffff;
+        text-decoration:none;
+        border: #A02279 solid;
+    
+    }
+
+    .dropdown{
+        .lines{
+            border-bottom: solid black .15em;
+            width: 1.5em;
+            margin-bottom: .15em;
+            margin-right: .5em;
+        }
+        
+        .drawer{
+            height: 100vh;
+            top:0;
+            left: 0;
+            z-index: 150;
+            position: absolute;
+            width: 60%;
+            background-color: #A02279;
+            color: #ffffff;
+            .logo{
+
+                display: flex;
+                flex-direction: column;
+                margin: 3em 1em;
+                height: 36px;
+                width: 233px;
+            }
+            #close{
+                div{
+                    border-bottom: solid white .15em;
+                    width: 1.5em;
+                    position: absolute;
+                    right:1.2em;
+                    top:1.25em;
+                    &:nth-child(1){
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+            img{
+                margin-bottom: 2em;
+                width: 9em;
+            }
+            .drawerLink{
+                text-decoration: none;
+                color: white;
+                margin-bottom: 3em;
+            }
+
+        }
+
+    }
+}
+.navBackground{
+    height: 100vh;
+    top:0;
+    right: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    background: #4040404D 30%;
+}
+.MobileLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar{
+    display: none;
+}
+
+@media (min-width:700px) {
+    .dropdown{
+        display: none;
+    }
+    .navLink{
+        text-decoration: none;
+        margin-right: 1em;
+        color: #434343;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .fourthLink{
+        margin-right: 0;
+    }
+    .navBar{
+        display: block;
+    }
+    #nav{
+        padding: 2.6em 4em 0;
+    }
+}
+
+@media (min-width:1200px) {
+    .navLink{
+        margin-right: 2em;
+    }
+    #nav{
+        padding:2.9em 6.25em 0;
+
+        #connectButton{
+            width: 170px;
+        }
+    }
+}
